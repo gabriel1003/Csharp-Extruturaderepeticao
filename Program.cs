@@ -35,13 +35,25 @@ namespace Csharp_Extruturaderepeticao
 
 //criando uma lista.
 
-List<string> listaNomes = new();
-listaNomes.Add("Gabriel Samersla");
-listaNomes.Add("Tiago Merçoni");
-listaNomes.Add("Silvana Samersla");
-listaNomes.Add("Larissa ");
-foreach(string nome in listaNomes)
-Console.WriteLine($"o nome da lista é : {nome}");
+// List<string> listaNomes = new();
+// listaNomes.Add("Gabriel Samersla");
+// listaNomes.Add("Tiago Merçoni");
+// listaNomes.Add("Silvana Samersla");
+// listaNomes.Add("Larissa ");
+// foreach(string nome in listaNomes)
+// Console.WriteLine($"o nome da lista é : {nome}");
+
+//usando try catch para imprimir fazer os tratamentos de erro.
+
+try
+{
+Console.WriteLine("digite um número: ");
+int numero = Convert.ToInt32(Console.ReadLine());
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"burro : {ex.Message} ");
+}
          }
     }
 }
